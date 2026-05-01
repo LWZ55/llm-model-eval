@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Wallet - Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .test-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        h1 {
+            margin: 0 0 10px 0;
+        }
+        .status {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .success {
+            color: #4caf50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-box">
+        <h1>🎉 Wealth Wallet is Working!</h1>
+        <p>If you can see this, the server is running correctly.</p>
+    </div>
+    
+    <div class="status">
+        <h2>Diagnostic Information:</h2>
+        <p class="success">✅ Frontend server is running on port 5173</p>
+        <p class="success">✅ HTML is being served correctly</p>
+        <p class="success">✅ CSS gradients are working</p>
+    </div>
+
+    <div class="status">
+        <h3>Next Steps:</h3>
+        <p>The React app should be loading. If you see a blank page instead:</p>
+        <ol>
+            <li>Open Developer Tools (Press <strong>F12</strong>)</li>
+            <li>Go to the <strong>Console</strong> tab</li>
+            <li>Look for any red error messages</li>
+            <li>Take a screenshot and share it</li>
+        </ol>
+    </div>
+
+    <script>
+        console.log('Test page loaded successfully');
+        console.log('Navigating to React app...');
+        // Wait 2 seconds then try to load the React app
+        setTimeout(() => {
+            window.location.href = '/';
+        }, 3000);
+    </script>
+</body>
+</html>
