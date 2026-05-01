@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --text: #595959;
+  --text-h: #262626;
+  --bg: #f5f5f5;
+  --surface: #ffffff;
+  --border: #e8e8e8;
+  --accent: #722ed1;
+  --accent-light: #f9f0ff;
+  --accent-border: #d3adf7;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.1);
+
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-h);
+  font-weight: 600;
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.ant-card {
+  border-radius: 14px !important;
+  box-shadow: var(--shadow) !important;
+  border: none !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover) !important;
+}
+
+.ant-btn-primary {
+  border-radius: 8px !important;
+  font-weight: 500;
+}
+
+.ant-tag {
+  border-radius: 6px !important;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.ant-table {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.ant-input, .ant-select-selector, .ant-picker {
+  border-radius: 8px !important;
+}
