@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Gradient card hover effect */
+.gradient-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+.gradient-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Statistic card inner */
+.stat-card .ant-statistic-title {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 14px !important;
+}
+.stat-card .ant-statistic-content {
+  color: #fff !important;
+}
+.stat-card .ant-statistic-content-prefix,
+.stat-card .ant-statistic-content-suffix {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Page title with icon */
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px !important;
+}
+.page-title .title-icon {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: #fff;
+}
+.page-title h2 {
+  margin: 0 !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #1a1a2e;
+}
+.page-title .subtitle {
+  font-size: 13px;
+  color: #8c8c8c;
+  margin-top: 2px;
+}
+
+/* Account card in list */
+.account-card {
+  border-radius: 12px !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #f0f0f0;
+}
+.account-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1) !important;
+  border-color: #e6e6e6;
+}
+
+/* Section header */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.section-header h3 {
+  margin: 0 !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #262626;
+}
+
+/* Tag style */
+.account-tag {
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+}
+
+/* Balance highlight */
+.balance-positive {
+  color: #52c41a !important;
+  font-weight: 700 !important;
+}
+.balance-negative {
+  color: #ff4d4f !important;
+  font-weight: 700 !important;
+}
+
+/* Chart container */
+.chart-container {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 20px;
+}
